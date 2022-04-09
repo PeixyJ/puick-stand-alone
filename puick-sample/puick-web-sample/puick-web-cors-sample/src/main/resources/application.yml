@@ -1,0 +1,9 @@
+puick:
+  web:
+    cors:
+      allowed-all: false
+      allowed-origin-list:
+        - https://blog.csdn.net
+        - https://www.sojson.com
+      allowed-header-list:
+        - puick
