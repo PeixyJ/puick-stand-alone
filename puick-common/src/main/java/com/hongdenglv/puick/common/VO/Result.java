@@ -1,4 +1,4 @@
-package com.hongdenglv.puick.common.VO;
+package com.hongdenglv.puick.common.vo;
 
 import lombok.Data;
 
