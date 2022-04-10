@@ -52,7 +52,7 @@ public class WebCorsConfiguration {
     @ConditionalOnMissingBean(CorsFilter.class)
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration(corsProperty().getAllowedPath(), buildCorsConfiguration());
+        source.registerCorsConfiguration(corsProperty().getCorsPath(), buildCorsConfiguration());
         return new CorsFilter(source);
     }
 

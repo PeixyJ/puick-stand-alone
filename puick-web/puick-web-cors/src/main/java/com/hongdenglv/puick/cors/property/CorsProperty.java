@@ -26,7 +26,7 @@ public class CorsProperty {
     /**
      * 拦截地址
      */
-    private String allowedPath = "/**";
+    private String corsPath = "/**";
 
     /**
      * 允许访问地址
