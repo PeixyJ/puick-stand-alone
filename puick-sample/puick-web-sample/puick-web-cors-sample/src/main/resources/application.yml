@@ -5,5 +5,8 @@ puick:
       allowed-origin-list:
         - https://blog.csdn.net
         - https://www.sojson.com
+        - https://www.baidu.com
       allowed-header-list:
         - puick
+      allowed-method-list:
+        - POST
