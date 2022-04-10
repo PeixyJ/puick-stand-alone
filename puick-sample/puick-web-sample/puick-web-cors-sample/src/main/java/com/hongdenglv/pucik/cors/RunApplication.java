@@ -1,4 +1,4 @@
-package com.hongdenglv.qucik.cors;
+package com.hongdenglv.pucik.cors;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
