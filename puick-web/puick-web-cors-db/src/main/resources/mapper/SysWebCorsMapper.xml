@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongdenglv.puick.cors.db.mapper.SysWebCorsMapper">
+  <resultMap id="BaseResultMap" type="com.hongdenglv.puick.cors.db.dao.SysWebCors">
+    <!--@mbg.generated-->
+    <!--@Table sys_web_cors-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="allowed_type" jdbcType="INTEGER" property="allowedType" />
+    <result column="allowed_content" jdbcType="VARCHAR" property="allowedContent" />
+    <result column="creator" jdbcType="BIGINT" property="creator" />
+    <result column="creation_time" jdbcType="TIMESTAMP" property="creationTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, allowed_type, allowed_content, creator, creation_time
+  </sql>
+</mapper>
