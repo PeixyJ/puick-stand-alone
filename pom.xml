@@ -7,6 +7,7 @@
         <module>puick-common</module>
         <module>puick-web</module>
         <module>puick-sample</module>
+        <module>puick-notification</module>
     </modules>
 
     <parent>
