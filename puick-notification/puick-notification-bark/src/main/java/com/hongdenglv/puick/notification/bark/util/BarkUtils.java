@@ -70,7 +70,7 @@ public class BarkUtils {
         mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
         OkHttpClient client = new OkHttpClient().newBuilder().build();
         MediaType mediaType = MediaType.parse("application/json");
-        log.info(mapper.writeValueAsString(noticeRequest));
+        log.debug(mapper.writeValueAsString(noticeRequest));
         RequestBody requestBody = RequestBody.create(mediaType, mapper.writeValueAsString(noticeRequest));
         Request request = new Request.Builder().url(barkProperty.getApiAddress()).method("POST", requestBody).build();
         Response execute = client.newCall(request).execute();
