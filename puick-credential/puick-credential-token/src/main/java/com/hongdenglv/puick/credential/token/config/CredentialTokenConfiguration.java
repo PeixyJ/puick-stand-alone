@@ -2,6 +2,9 @@ package com.hongdenglv.puick.credential.token.config;
 
 import com.hongdenglv.puick.credential.token.DefaultTokenEncryptionService;
 import com.hongdenglv.puick.credential.token.TokenEncryptionService;
+import com.hongdenglv.puick.credential.token.utils.GenerateTokenUtils;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,7 +18,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan("com.hongdenglv.puick.credential.token")
-public class CredentialTokenConfiguration {
+public class CredentialTokenConfiguration{
 
     @Bean
     @ConditionalOnMissingBean(value = TokenEncryptionService.class)

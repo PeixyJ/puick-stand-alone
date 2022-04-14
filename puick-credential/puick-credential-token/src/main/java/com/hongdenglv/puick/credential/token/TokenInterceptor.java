@@ -1,8 +1,9 @@
 package com.hongdenglv.puick.credential.token;
 
 import com.hongdenglv.puick.credential.token.property.CredentialTokenProperty;
+import com.hongdenglv.puick.credential.token.utils.GenerateTokenUtils;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.annotation.Resource;
@@ -16,10 +17,13 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2022-4-12 23:23
  */
 @Component
-public class TokenInterceptor implements HandlerInterceptor {
+public class TokenInterceptor implements HandlerInterceptor , InitializingBean {
 
     @Resource
     CredentialTokenProperty credentialTokenProperty;
+
+    @Resource
+    GenerateTokenUtils generateTokenUtils;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -28,4 +32,8 @@ public class TokenInterceptor implements HandlerInterceptor {
         return credentialTokenProperty.getToken().equals(headToken) || credentialTokenProperty.getToken().equals(bodyToken);
     }
 
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        generateTokenUtils.autoGenerateToken();
+    }
 }

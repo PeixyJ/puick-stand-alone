@@ -1,6 +1,5 @@
 package com.hongdenglv.puick.credential.token;
 
-import cn.hutool.crypto.SecureUtil;
 import com.hongdenglv.puick.credential.token.property.CredentialTokenProperty;
 
 import javax.annotation.Resource;
