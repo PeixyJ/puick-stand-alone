@@ -2,6 +2,10 @@
 
 给Web项目加上一个简单的 Token 作为拦截器，以防止恶意访问。
 
+## 例子
+
+[puick-credential-token-sample](puick-sample/puick-credential-sample/puick-credential-token-sample)
+
 ## 配置文件
 
 ```properties
