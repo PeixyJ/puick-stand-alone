@@ -10,7 +10,7 @@
 
 ## 下载jar包
 
-[puick-service-receive-1.0.0-SNAPSHOT-spring-boot.jar](file/puick-service-receive-1.0.0-SNAPSHOT-spring-boot.jar)
+[puick-service-receive-1.0.0-SNAPSHOT-spring-boot.jar](https://github.com/PeixyJ/puick-stand-alone/releases/tag/puick-service-receive-1.0.0-SNAPSHOT)
 
 ## 安装与使用
 
