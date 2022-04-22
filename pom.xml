@@ -9,6 +9,7 @@
         <module>puick-sample</module>
         <module>puick-notification</module>
         <module>puick-credential</module>
+        <module>puick-server</module>
     </modules>
 
     <parent>
