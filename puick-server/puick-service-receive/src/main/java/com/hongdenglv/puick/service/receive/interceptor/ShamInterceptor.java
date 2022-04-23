@@ -23,6 +23,7 @@ public class ShamInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        log.info("requestURI:{}", request.getRequestURI());
         return true;
     }
 
