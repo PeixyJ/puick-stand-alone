@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ com.hongdenglv.puick.thirpart.megvii.b4h.config.B4HConfiguration

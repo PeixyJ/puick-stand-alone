@@ -10,6 +10,7 @@
         <module>puick-notification</module>
         <module>puick-credential</module>
         <module>puick-server</module>
+        <module>puick-thirdparty</module>
     </modules>
 
     <parent>
@@ -49,6 +50,7 @@
         <spring.cloud.version>Hoxton.SR8</spring.cloud.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <hutool-all.version>5.7.14</hutool-all.version>
+        <okhttp-digest.version>2.6</okhttp-digest.version>
         <!--puick-->
         <puick-common.version>1.0.0-SNAPSHOT</puick-common.version>
     </properties>
@@ -86,6 +88,11 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.rburgst</groupId>
+                <artifactId>okhttp-digest</artifactId>
+                <version>${okhttp-digest.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
